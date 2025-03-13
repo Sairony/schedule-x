@@ -63,6 +63,7 @@ class DragAndDropPluginImpl implements DragAndDropPlugin {
 }
 
 export const createDragAndDropPlugin = (minutesPerInterval = 15) => {
+  console.log("test")
   return definePlugin(
     'dragAndDrop',
     new DragAndDropPluginImpl(minutesPerInterval)
